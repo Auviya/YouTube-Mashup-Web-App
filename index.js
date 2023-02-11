@@ -8,6 +8,7 @@ var nodemailer=require("nodemailer");
 const JSZip = require('jszip');
 const zip = new JSZip();
 const app=express();
+const port=process.env.PORT || 3000;
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'/views'));
 
@@ -118,7 +119,7 @@ app.post('/mashup',async function(req,res){
     
     //DOWNLOADING VIDEOS
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Listening now");
 })
 
