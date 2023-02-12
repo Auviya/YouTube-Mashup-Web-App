@@ -17,4 +17,14 @@ A web app to make YouTube mashups
 
 7.Go to https://www.youtube.com/watch?v=i55kS6IZOIE&feature=youtu.be to run the application locally
 
+
+## Running StandAlone python script
+
+1.File name is pyonly.py
+
+2.Usage: Through command line ```python pyonly.py <artist_name> <no_of_vids> <duration_of_each_secs> <output_file_name>```
+
+Ex: python pyonly.py papon 5 10 102197019-output.mp3   
+
+
 ## All Done!!!
