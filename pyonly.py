@@ -92,6 +92,7 @@ def sort(urls,t,n):
             # Print the video length
             print("Video length",i," :", video_length, "seconds") 
         except:
+            vlen.append(-1)
             continue
     df=(pd.DataFrame({'u':urls,'v':vlen}).sort_values(by="v"))
     return(df[df['v']>=t]['u'])
@@ -189,7 +190,7 @@ def merge(n):
         for i in range(1,n):
             aud1=AudioSegment.from_file("downloads/aud"+str(i)+".mp3", format="mp3")
             aud=aud+aud1
-        aud.export(output+'.mp3',format="mp3")
+        aud.export(output,format="mp3")
     except:
         print("There was an error in merging please try again")
 
