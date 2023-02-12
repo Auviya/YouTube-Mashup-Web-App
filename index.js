@@ -79,8 +79,8 @@ app.post('/mashup',async function(req,res){
             var transporter=nodemailer.createTransport({
                 service:'gmail',
                 auth:{
-                    user:'auviya023@gmail.com',
-                    pass:'xhuztaytbvtqovkg'
+                    user:'your gmail email',
+                    pass:'your app password'
                 }
             });
             var mailOptions={
